@@ -3,6 +3,288 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Turquoise Index — Ten Beaches and the Physics Behind Their Colour</title>
+<meta name="description" content="Ten of the world's most turquoise beaches, with the seasons, sea temperatures, access rules and the optics that make the water that colour.">
+<link rel="canonical" href="https://harmikesmailian.com/">
+<meta property="og:title" content="The Turquoise Index">
+<meta property="og:description" content="Ten turquoise beaches — and why the water looks like that.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d3b45">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d3b45'/><path d='M8 62q17-14 34 0t34 0 16-6' stroke='%2340d6c8' stroke-width='9' fill='none' stroke-linecap='round'/></svg>">
+<style>
+:root{
+  --deep:#0d3b45; --deep-2:#12505c; --turq:#1fb5ad; --turq-lt:#7fe3dc;
+  --foam:#eaf7f6; --sand:#f7f2e7; --paper:#fffdf9;
+  --ink:#0f2b31; --muted:#5b7b81; --line:#d8e8e7;
+  --serif:"Iowan Old Style",Georgia,"Palatino Linotype",Palatino,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--deep-2)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 26px}
+header{position:sticky;top:0;z-index:40;background:rgba(255,253,249,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.byline{font-family:var(--serif);font-size:1.05rem;color:var(--deep)}
+.byline b{font-weight:400}
+.byline em{font-style:normal;color:var(--turq)}
+.navlinks{display:flex;gap:22px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.navlinks a{color:var(--muted);text-decoration:none}
+.navlinks a:hover{color:var(--deep)}
+@media(max-width:720px){.navlinks{display:none}}
+.hero{background:linear-gradient(165deg,var(--deep) 0%,var(--deep-2) 55%,#1a6b74 100%);color:#fff;padding:78px 0 66px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:radial-gradient(60% 100% at 50% 100%, rgba(127,227,220,.35), transparent 70%)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.5rem,6.4vw,4.5rem);line-height:1.02;margin:0 0 20px;letter-spacing:-.02em}
+.hero .sub{font-size:clamp(1.02rem,2.1vw,1.22rem);color:#c9ece9;max-width:62ch;margin:0 0 30px}
+.eyebrow{font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--turq-lt);margin:0 0 20px}
+.facts{display:flex;flex-wrap:wrap;gap:10px}
+.pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 16px;font-size:13px;color:#eafffd}
+.science{background:var(--foam);border-bottom:1px solid var(--line);padding:60px 0}
+.sci-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:44px;align-items:start}
+@media(max-width:860px){.sci-grid{grid-template-columns:1fr;gap:24px}}
+h2.sec{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.4vw,2.2rem);margin:0 0 14px;line-height:1.2;letter-spacing:-.01em}
+.sci-grid p{margin:0 0 14px;color:#2c4f55}
+.sci-grid p:last-child{margin-bottom:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+@media(max-width:720px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+.step b{display:block;font-family:var(--serif);font-size:1.6rem;color:var(--turq);line-height:1;margin-bottom:10px;font-weight:400}
+.step h3{margin:0 0 6px;font-size:.95rem}
+.step p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.6}
+.controls{position:sticky;top:60px;z-index:30;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chips span.lbl{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.chip{border:1px solid var(--line);background:#fff;color:var(--deep);border-radius:100px;padding:7px 15px;font-size:13.5px;cursor:pointer;font-family:inherit;transition:.15s}
+.chip:hover{border-color:var(--turq)}
+.chip[aria-pressed="true"]{background:var(--deep);color:#fff;border-color:var(--deep)}
+main{padding:20px 0 40px}
+.entry{display:grid;grid-template-columns:1.08fr 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:34px 0;background:#fff}
+.entry:nth-child(even) .shot{order:2}
+@media(max-width:900px){.entry{grid-template-columns:1fr}.entry:nth-child(even) .shot{order:0}}
+.shot{position:relative;background:var(--foam);min-height:280px}
+.shot img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.rank{position:absolute;top:16px;left:16px;background:rgba(13,59,69,.88);color:#fff;font-family:var(--serif);font-size:1.15rem;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;backdrop-filter:blur(4px)}
+.credit{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.62));color:#e8f6f5;font-size:10.5px;padding:22px 12px 8px;line-height:1.45}
+.credit a{color:#bfeae6}
+.body{padding:32px 30px}
+.region{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--turq);margin:0 0 8px}
+.body h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,3vw,2rem);margin:0 0 12px;line-height:1.12;letter-spacing:-.015em}
+.why{margin:0 0 20px;color:#2c4f55;font-size:15.5px}
+.stat{background:var(--sand);border-left:3px solid var(--turq);padding:12px 15px;font-size:14px;margin:0 0 20px;border-radius:0 6px 6px 0}
+dl{display:grid;grid-template-columns:auto 1fr;gap:9px 18px;margin:0 0 18px;font-size:14.2px}
+dt{font-size:10.8px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding-top:4px;white-space:nowrap}
+dd{margin:0;color:var(--ink)}
+.know{border-top:1px solid var(--line);padding-top:14px;font-size:14px;color:#2c4f55}
+.know b{color:var(--deep);font-size:10.8px;letter-spacing:.13em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag{background:#fff4e5;border-left:3px solid #e8a33d}
+footer{background:var(--deep);color:#b9dcda;padding:56px 0 44px;font-size:13.5px;line-height:1.75}
+footer a{color:var(--turq-lt)}
+footer h4{color:#fff;font-family:var(--serif);font-weight:400;font-size:1.3rem;margin:0 0 12px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:34px}
+@media(max-width:720px){.foot-grid{grid-template-columns:1fr}}
+.empty{text-align:center;padding:50px 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="byline"><b>Harmik</b> <em>&middot;</em> The Turquoise Index</div>
+    <nav class="navlinks">
+      <a href="#why">The Physics</a>
+      <a href="#list">The Ten</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </div>
+</header>
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">A field guide</p>
+    <h1>Ten turquoise waters,<br>and why they look like that.</h1>
+    <p class="sub">Turquoise is not a property of water &mdash; it is a property of what sits underneath it. These ten beaches share the same trick: pale reflective ground, shallow depth, and almost nothing suspended in between. Here is where they are, when to go, and what you need to know before you do.</p>
+    <div class="facts">
+      <span class="pill">10 destinations &middot; 8 countries</span>
+      <span class="pill">Sea temperatures &amp; seasons</span>
+      <span class="pill">Access rules and fees checked for 2026</span>
+    </div>
+  </div>
+</div>
+<section class="science" id="why">
+  <div class="wrap">
+    <div class="sci-grid">
+      <div><h2 class="sec">Why the water turns turquoise</h2></div>
+      <div>
+        <p>Water absorbs light unevenly. Red and orange wavelengths are absorbed within the first few metres; blue and green penetrate much further. Over deep water, almost everything that reaches your eye is the small fraction of blue scattered back &mdash; so the sea reads navy.</p>
+        <p>Turquoise happens when you interrupt that. Put a bright, highly reflective floor a metre or two down &mdash; white carbonate sand made of ground coral and shell, or pure silica, or a limestone shelf &mdash; and light hits bottom before it can be absorbed, then bounces straight back up. The short path preserves the greens; the reflection adds brightness. Green plus blue plus brightness is what the eye calls turquoise.</p>
+        <p>The third ingredient is what <em>isn't</em> there: sediment and plankton. River mouths, algal blooms and stirred-up silt all scatter light in ways that mute the colour. The clearest turquoise sits where no river drains, the ground is pale, and the water is shallow.</p>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Pale ground</h3><p>Carbonate sand, silica, or limestone reflects most of the light that reaches it instead of swallowing it.</p></div>
+      <div class="step"><b>2</b><h3>Shallow water</h3><p>A short light path means green wavelengths survive the round trip down and back.</p></div>
+      <div class="step"><b>3</b><h3>Nothing suspended</h3><p>No river silt, low plankton. Particles scatter light sideways and grey the colour out.</p></div>
+    </div>
+  </div>
+</section>
+<div class="controls">
+  <div class="wrap chips" id="chips">
+    <span class="lbl">Filter</span>
+    <button class="chip" data-f="all" aria-pressed="true">All ten</button>
+    <button class="chip" data-f="Caribbean" aria-pressed="false">Caribbean</button>
+    <button class="chip" data-f="Indian" aria-pressed="false">Indian Ocean</button>
+    <button class="chip" data-f="Pacific" aria-pressed="false">Pacific</button>
+    <button class="chip" data-f="Atlantic" aria-pressed="false">Atlantic</button>
+    <button class="chip" data-f="Mediterranean" aria-pressed="false">Mediterranean</button>
+    <button class="chip" data-f="restricted" aria-pressed="false">Restricted access</button>
+  </div>
+</div>
+<main class="wrap" id="list"></main>
+<footer id="credits">
+  <div class="wrap foot-grid">
+    <div>
+      <h4>About this guide</h4>
+      <p>Compiled as a reference, not a booking service. Sea temperatures are typical annual ranges and vary year to year. Access rules, fees and closures change &mdash; the notes here were checked in 2026, but confirm with the managing park authority before you travel, particularly for Navagio, Fernando de Noronha and Rabbit Beach.</p>
+    </div>
+    <div>
+      <h4>Photographs</h4>
+      <p>All photographs are from Wikimedia Commons and are reproduced under their respective Creative Commons licences. Photographer and licence are credited on each image; follow any credit link for the original file and full terms.</p>
+      <p style="margin-top:18px;opacity:.75">&copy; <span id="yr">2026</span> Harmik</p>
+    </div>
+  </div>
+</footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var CC={"CC BY 2.0":"https://creativecommons.org/licenses/by/2.0/","CC BY 2.5":"https://creativecommons.org/licenses/by/2.5/","CC BY 3.0":"https://creativecommons.org/licenses/by/3.0/","CC BY-SA 2.0":"https://creativecommons.org/licenses/by-sa/2.0/","CC BY-SA 4.0":"https://creativecommons.org/licenses/by-sa/4.0/"};
+var U="https://upload.wikimedia.org/wikipedia/commons/", C="https://commons.wikimedia.org/wiki/File:";
+var D=[
+{n:"Grace Bay Beach",r:"Providenciales, Turks and Caicos",o:"Caribbean",sea:"Atlantic, on the Caicos Bank",
+ m:"December – April",t:"26–29 °C",s:"Fine white carbonate sand from coral, shell and marine organisms",
+ why:"Sunlight reflects off pale carbonate sand through only a few metres of very clear, low-sediment water, so blue-green wavelengths dominate what returns to the eye.",
+ go:"Fly to Providenciales (PLS); Grace Bay resorts are a 15–20 minute taxi from the airport.",
+ k:"Inside Princess Alexandra National Park: no anchoring on coral, no collecting shells or coral, 15 mph vessel speed limit.",
+ st:"The bay runs about 4.8 km (3 miles) and has placed first or second in major world beach rankings roughly a dozen times.",
+ img:U+"thumb/1/14/Grace_bay%2C_Turks_and_Caicos_%2844250116614%29.jpg/1920px-Grace_bay%2C_Turks_and_Caicos_%2844250116614%29.jpg",
+ f:"Grace_bay,_Turks_and_Caicos_(44250116614).jpg",a:"VV Nincic",l:"CC BY 2.0"},
+{n:"Whitehaven Beach",r:"Whitsunday Island, Queensland, Australia",o:"Pacific",sea:"Coral Sea, Great Barrier Reef Marine Park",
+ m:"June – October",t:"22–28 °C",s:"About 98% pure silica — brilliant white and cool underfoot, not coral-derived",
+ why:"Exceptionally reflective silica sand under shallow tidal water throws light straight back, and at Hill Inlet the shifting tide swirls sand and water into green-blue bands.",
+ go:"Boat or seaplane day trip from Airlie Beach or Hamilton Island. There is no road and no resort on the beach.",
+ k:"National park with no facilities beyond composting toilets. Wear a stinger suit during the November–May marine stinger season.",
+ st:"The beach runs roughly 7 km along the eastern side of Whitsunday Island.",
+ img:U+"thumb/8/8f/Whitehaven_Beach%2C_Whitsunday_Island%2C_Queensland.jpg/1920px-Whitehaven_Beach%2C_Whitsunday_Island%2C_Queensland.jpg",
+ f:"Whitehaven_Beach,_Whitsunday_Island,_Queensland.jpg",a:"Slug69",l:"CC BY-SA 2.0"},
+{n:"Anse Source d'Argent",r:"La Digue, Seychelles",o:"Indian",sea:"Indian Ocean",
+ m:"April – May, October – November",t:"26–29 °C",s:"Pale coral sand threaded between weathered pink-grey granite boulders",
+ why:"A fringing reef holds a very shallow, sheltered lagoon over bright carbonate sand, so most light scatters back before deeper blue absorption can take hold.",
+ go:"Fly to Mahé (SEZ), ferry to Praslin and on to La Digue; the beach is a short bicycle ride from La Passe jetty.",
+ k:"Access runs through the private L'Union Estate, which charges an entry fee of roughly SCR 150 per person. At low tide the water is too shallow to swim.",
+ st:"Among the most photographed beaches on earth — the granite boulders are eroded remnants of the Seychelles' continental granite, unusual for a mid-ocean island.",
+ img:U+"thumb/7/74/Anse_Source_d%27Argent_-_La_Digue_-_Seychelles_-_02.jpg/1920px-Anse_Source_d%27Argent_-_La_Digue_-_Seychelles_-_02.jpg",
+ f:"Anse_Source_d%27Argent_-_La_Digue_-_Seychelles_-_02.jpg",a:"NorbertNagel",l:"CC BY-SA 4.0",fee:1},
+{n:"Navagio (Shipwreck) Beach",r:"Zakynthos, Ionian Islands, Greece",o:"Mediterranean",sea:"Ionian Sea",
+ m:"June – September by boat; May and October are quieter",t:"15–26 °C",s:"White limestone pebbles and coarse cliff grit rather than true sand",
+ why:"White limestone cliffs and seabed reflect light upward through unusually clear, plankton-poor Ionian water, concentrating an intense turquoise inside the enclosed cove.",
+ go:"Fly to Zakynthos (ZTH). Boats run from Porto Vromi, Agios Nikolaos and Zakynthos Town; the clifftop viewpoint near Anafonitria is reachable by road.",
+ k:"Landing on the beach is prohibited because of landslide risk, and the closure has been extended to 31 October 2026. Boats must stay offshore; the clifftop viewpoint remains open.",
+ st:"Closed to landings since a magnitude 5.4 earthquake in 2022 destabilised the surrounding limestone cliffs.",
+ img:U+"thumb/d/d0/Navagio_beach_Zakynthos.jpg/1920px-Navagio_beach_Zakynthos.jpg",
+ f:"Navagio_beach_Zakynthos.jpg",a:"kallerna",l:"CC BY-SA 4.0",closed:1},
+{n:"Baía do Sancho",r:"Fernando de Noronha, Pernambuco, Brazil",o:"Atlantic",sea:"Atlantic Ocean",
+ m:"August – December",t:"26–29 °C",s:"Fine golden-white sand of mixed volcanic and carbonate origin, under ~70 m cliffs",
+ why:"A sheltered volcanic bay with light sand, no river runoff and very clear open-Atlantic water produces exceptional visibility and a strong blue-green return.",
+ go:"Fly to Fernando de Noronha (FEN) from Recife or Natal. Reach the sand by clifftop trail and a steel ladder through a rock crevice, or arrive by boat.",
+ k:"Visitors pay a daily environmental preservation tax plus a separate national park ticket; the park ticket is required to reach Sancho.",
+ st:"The preservation tax rose 4.4% for 2026 to about R\$105.79 for the first day, and the park pass costs R\$384 for foreign visitors.",
+ img:U+"thumb/f/f5/Fernando_De_Noronha_Strand_Baia_Do_Sancho_%28125363049%29.jpeg/1920px-Fernando_De_Noronha_Strand_Baia_Do_Sancho_%28125363049%29.jpeg",
+ f:"Fernando_De_Noronha_Strand_Baia_Do_Sancho_(125363049).jpeg",a:"Dronepicr",l:"CC BY 3.0",fee:1},
+{n:"Matira Beach",r:"Bora Bora, French Polynesia",o:"Pacific",sea:"South Pacific, inside the Bora Bora lagoon",
+ m:"May – October",t:"27–29 °C",s:"White coral and shell sand over a flat, coral-free lagoon floor",
+ why:"A barrier reef encloses a shallow lagoon over bright coral sand, so light reflects back long before the water can absorb the green and blue wavelengths.",
+ go:"Fly to Bora Bora (BOB), take the airport shuttle boat to Vaitape, then a taxi about 8 km south.",
+ k:"The island's only genuinely public beach, so it fills up on cruise-ship days. Little natural shade and no lifeguard service.",
+ st:"Runs about 1.5 km from Matira Point — the only public-access beach on Bora Bora's main island.",
+ img:U+"thumb/0/07/Matira_Beach%2C_Bora_Bora%2C_French_Polynesia.jpg/1920px-Matira_Beach%2C_Bora_Bora%2C_French_Polynesia.jpg",
+ f:"Matira_Beach,_Bora_Bora,_French_Polynesia.jpg",a:"Sba2",l:"CC BY 2.5"},
+{n:"Playa Norte",r:"Isla Mujeres, Quintana Roo, Mexico",o:"Caribbean",sea:"Caribbean Sea",
+ m:"December – April",t:"26–29 °C",s:"Fine white carbonate sand from Yucatán reef coral and shell",
+ why:"The water stays waist-deep far offshore over pale carbonate sand, so a very short light path plus high seabed reflectance yields a bright, even turquoise.",
+ go:"Fly to Cancún (CUN), then ferry from Puerto Juárez or the Zona Hotelera. The beach is walkable from the ferry pier.",
+ k:"Its sheltered north-facing position usually keeps it far clearer of sargassum than Cancún, but beach clubs charge for loungers and midday is crowded.",
+ st:"The water stays roughly waist-deep for about 100 m from shore.",
+ img:U+"thumb/7/72/Playa_Norte%2C_Isla_Mujeres_QR_2020_01.jpg/1920px-Playa_Norte%2C_Isla_Mujeres_QR_2020_01.jpg",
+ f:"Playa_Norte,_Isla_Mujeres_QR_2020_01.jpg",a:"Bernard DUPONT",l:"CC BY-SA 2.0"},
+{n:"Nungwi Beach",r:"Unguja, Zanzibar, Tanzania",o:"Indian",sea:"Indian Ocean",
+ m:"June – October, December – February",t:"25–29 °C",s:"Fine pale coral sand backed by coral rag limestone",
+ why:"Shallow reef-flat water over bright coral sand near the island's northern tip reflects light strongly, and a low sediment load keeps the water clear.",
+ go:"Fly to Abeid Amani Karume International (ZNZ) near Stone Town; Nungwi is a 1 to 1.5 hour drive north.",
+ k:"Unlike Zanzibar's east coast, Nungwi stays swimmable at most tides. Dress modestly away from the beach and note reduced hours during Ramadan.",
+ st:"Sits at Unguja's northern tip, where tidal range is far smaller than on the east coast — which is why swimming works through most of the day.",
+ img:U+"f/f5/Nungwi-Beach-Zanzibar.jpg",
+ f:"Nungwi-Beach-Zanzibar.jpg",a:"Niceley",l:"CC BY-SA 4.0"},
+{n:"Rabbit Beach",r:"Lampedusa, Pelagie Islands, Italy",o:"Mediterranean",sea:"Mediterranean, Strait of Sicily",
+ m:"May – June, September",t:"15–26 °C",s:"Fine pale limestone and shell sand over a white seabed",
+ why:"A shallow white limestone shelf between the shore and Rabbit Island reflects light back through clear, nutrient-poor Mediterranean water.",
+ go:"Fly to Lampedusa (LMP) from Palermo or Catania, about an hour. Park above the cove and walk down a rocky path for 15–20 minutes.",
+ k:"A nature reserve: entry is free but requires advance online booking in summer, split into morning and afternoon shifts, with no large umbrellas or deckchairs.",
+ st:"One of the few Italian beaches where loggerhead turtles still nest — nesting zones are cordoned off each summer.",
+ img:U+"thumb/1/1c/SPIAGGIA_DEI_CONIGLI_LAMPEDUSA_1.jpg/1920px-SPIAGGIA_DEI_CONIGLI_LAMPEDUSA_1.jpg",
+ f:"SPIAGGIA_DEI_CONIGLI_LAMPEDUSA_1.jpg",a:"ALY MOHAMED YOUSSEF",l:"CC BY-SA 4.0",fee:1},
+{n:"Nacpan Beach",r:"El Nido, Palawan, Philippines",o:"Pacific",sea:"South China Sea",
+ m:"November – May",t:"27–30 °C",s:"Soft golden-cream sand, coarser and more mineral-rich than pure coral sand",
+ why:"Warm, clear water over a gently shelving pale sand shelf scatters light back before blue absorption deepens, giving a bright green-turquoise close to shore.",
+ go:"Fly to El Nido (ENI) or Puerto Princesa (PPS). Nacpan is about 18 km from El Nido town, 30–45 minutes by tricycle or motorbike.",
+ k:"No entrance fee and no lifeguard. Surf and rip currents can be strong outside the dry season, and facilities amount to a few beach bars.",
+ st:"Runs roughly 4 km, ending at the twin-beach sandbar where Nacpan meets Calitang.",
+ img:U+"thumb/7/7c/Nacpan_Beach_in_El_Nido.jpg/1920px-Nacpan_Beach_in_El_Nido.jpg",
+ f:"Nacpan_Beach_in_El_Nido.jpg",a:"Micluna",l:"CC BY-SA 4.0"}
+];
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function card(d,i){
+  var flag = d.closed ? ' flag' : '';
+  return '<article class="entry" data-o="'+d.o+'" data-x="'+((d.closed||d.fee)?'restricted':'open')+'">'
+   +'<div class="shot"><img loading="lazy" src="'+d.img+'" alt="'+esc(d.n)+', '+esc(d.r)+'">'
+   +'<div class="rank">'+(i+1)+'</div>'
+   +'<div class="credit">Photo: '+esc(d.a)+' &middot; <a href="'+CC[d.l]+'" target="_blank" rel="noopener">'+d.l+'</a> &middot; <a href="'+C+d.f+'" target="_blank" rel="noopener">Wikimedia Commons</a></div></div>'
+   +'<div class="body">'
+   +'<p class="region">'+esc(d.r)+'</p>'
+   +'<h3>'+esc(d.n)+'</h3>'
+   +'<p class="why">'+esc(d.why)+'</p>'
+   +'<p class="stat'+flag+'">'+esc(d.st)+'</p>'
+   +'<dl>'
+   +'<dt>Best months</dt><dd>'+esc(d.m)+'</dd>'
+   +'<dt>Sea temp</dt><dd>'+esc(d.t)+'</dd>'
+   +'<dt>Water</dt><dd>'+esc(d.sea)+'</dd>'
+   +'<dt>The sand</dt><dd>'+esc(d.s)+'</dd>'
+   +'<dt>Getting there</dt><dd>'+esc(d.go)+'</dd>'
+   +'</dl>'
+   +'<div class="know"><b>Know before you go</b>'+esc(d.k)+'</div>'
+   +'</div></article>';
+}
+var main=document.getElementById('list');
+function render(f){
+  var rows=D.filter(function(d){
+    if(f==='all') return true;
+    if(f==='restricted') return !!(d.closed||d.fee);
+    return d.o===f;
+  });
+  main.innerHTML = rows.length ? rows.map(function(d){return card(d, D.indexOf(d));}).join('')
+    : '<p class="empty">Nothing in that group.</p>';
+}
+render('all');
+document.getElementById('chips').addEventListener('click',function(e){
+  var b=e.target.closest('.chip'); if(!b) return;
+  [].forEach.call(this.querySelectorAll('.chip'),function(c){c.setAttribute('aria-pressed', c===b?'true':'false');});
+  render(b.dataset.f);
+});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Harmik</title>
 <meta name="description" content="A small study, dimly lit. Books, lenses, tools, and one patient crow.">
 <link rel="canonical" href="https://harmikesmailian.com/">

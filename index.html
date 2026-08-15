@@ -3,187 +3,128 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harmik Esmailian &mdash; Transportation &amp; Logistics</title>
-<meta name="description" content="Harmik (Mike) Esmailian, Chief Executive Officer of Mega Fleet Logistics.">
-<meta name="author" content="Harmik Esmailian">
+<title>Harmik</title>
+<meta name="description" content="A small study, dimly lit. Books, lenses, tools, and one patient crow.">
 <link rel="canonical" href="https://harmikesmailian.com/">
-<meta property="og:title" content="Harmik Esmailian">
-<meta property="og:description" content="CEO of Mega Fleet Logistics. Moving freight across the 48 states and Mexico since 1999.">
+<meta property="og:title" content="Harmik">
+<meta property="og:description" content="A small study, dimly lit.">
 <meta property="og:type" content="profile">
-<meta property="og:url" content="https://harmikesmailian.com/">
-<meta property="og:image" content="https://harmikesmailian.com/assets/portrait.png">
-<meta name="theme-color" content="#1c1913">
+<meta property="og:image" content="https://harmikesmailian.com/assets/portrait.jpg">
+<meta name="theme-color" content="#14150f">
 <style>
 :root{
-  --bg:#1c1913; --bg-2:#241f18; --panel:#2b251c; --panel-2:#332c22;
-  --amber:#d9a441; --amber-soft:#e8c07a; --cream:#f2ebdd;
-  --muted:#a99b84; --muted-dim:#7d7161; --line:rgba(217,164,65,.16); --max:1100px;
-  --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Times New Roman",serif;
+  --ink:#14150f; --ink-2:#1c1e16; --lamp:#e8a63c; --parch:#efe6d2;
+  --dust:#a89e86; --dust-dim:#736b58; --line:rgba(232,166,60,.15);
+  --serif:"Iowan Old Style",Georgia,"Palatino Linotype",Palatino,"Times New Roman",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--cream);font:16.5px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
-a{color:var(--amber);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
-header{position:sticky;top:0;z-index:50;background:rgba(28,25,19,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
-.brand{font-family:var(--serif);font-size:1.12rem;color:var(--cream)}
-.brand em{color:var(--amber);font-style:normal}
-.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
-.nav ul a{color:var(--muted);font-size:13px;letter-spacing:.13em;text-transform:uppercase}
-.nav ul a:hover{color:var(--amber);text-decoration:none}
-@media(max-width:760px){.nav ul{display:none}}
-.hero{position:relative;padding:84px 0 76px;background:radial-gradient(760px 380px at 88% 18%, rgba(217,164,65,.14), transparent 62%),radial-gradient(700px 420px at 8% 92%, rgba(217,164,65,.06), transparent 60%),linear-gradient(180deg,var(--bg-2),var(--bg));border-bottom:1px solid var(--line)}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:44px}}
-.eyebrow{color:var(--amber);font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 20px;font-weight:600}
-.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,6.4vw,4.4rem);line-height:1.02;margin:0 0 22px;letter-spacing:-.015em}
-.hero .lede{font-size:clamp(1.06rem,2.1vw,1.24rem);color:var(--muted);max-width:520px;margin:0 0 34px}
-.btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 27px;border-radius:3px;font-size:14.5px;font-weight:600;border:1px solid var(--amber);transition:.16s}
-.btn-primary{background:var(--amber);color:#1c1913}
-.btn-primary:hover{background:var(--amber-soft);text-decoration:none}
-.btn-ghost{color:var(--amber);background:transparent}
-.btn-ghost:hover{background:rgba(217,164,65,.1);text-decoration:none}
-.portrait{position:relative;justify-self:center;width:100%;max-width:380px}
-.portrait::after{content:"";position:absolute;inset:-16px;border-radius:8px;border:1px solid var(--line);pointer-events:none}
-.portrait img{display:block;width:100%;height:auto;border-radius:5px;box-shadow:0 24px 60px rgba(0,0,0,.55)}
-.portrait .fallback{display:none;aspect-ratio:1;border-radius:5px;background:var(--panel);border:1px dashed rgba(217,164,65,.4);align-items:center;justify-content:center;text-align:center;padding:28px;color:var(--muted-dim);font-size:14px;line-height:1.5}
-.portrait img.missing{display:none}
-.portrait img.missing + .fallback{display:flex}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
-.stat{background:var(--bg);padding:34px 22px;text-align:center}
-.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:2.15rem;color:var(--amber);line-height:1.1}
-.stat span{font-size:12px;color:var(--muted-dim);letter-spacing:.13em;text-transform:uppercase}
-@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
-section{padding:92px 0;border-bottom:1px solid var(--line)}
-h2{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-dim);margin:0 0 26px;font-weight:600}
-.section-title{font-family:var(--serif);font-weight:400;font-size:clamp(1.75rem,3.6vw,2.5rem);line-height:1.22;margin:0 0 22px;letter-spacing:-.012em}
-.cols{display:grid;grid-template-columns:1fr 1.15fr;gap:60px}
-@media(max-width:860px){.cols{grid-template-columns:1fr;gap:30px}}
-.prose p{color:var(--muted);margin:0 0 19px}
-.prose p:last-child{margin-bottom:0}
-.pull{font-family:var(--serif);font-size:1.18rem;line-height:1.55;color:var(--amber-soft);border-left:2px solid var(--amber);padding-left:20px;margin:0 0 26px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:860px){.cards{grid-template-columns:1fr}}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:27px;transition:.18s}
-.card:hover{background:var(--panel-2);border-color:rgba(217,164,65,.42);transform:translateY(-2px)}
-.card .ico{font-family:var(--serif);font-size:1.5rem;color:var(--amber);display:block;margin-bottom:12px;line-height:1}
-.card h3{margin:0 0 9px;font-size:1.04rem;color:var(--cream);font-weight:600}
-.card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.62}
-.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
-.tl li{padding:0 0 34px 30px;position:relative}
-.tl li:last-child{padding-bottom:0}
-.tl li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--amber);border:3px solid var(--bg)}
-.tl .yr{font-size:12px;letter-spacing:.14em;color:var(--amber);text-transform:uppercase;margin:0}
-.tl h3{font-family:var(--serif);font-weight:400;margin:7px 0 7px;font-size:1.24rem;color:var(--cream)}
-.tl p:last-child{margin:0;color:var(--muted);font-size:15px}
-.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
-@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
-.cbox{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:25px}
-.cbox span{display:block;font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted-dim);margin-bottom:9px}
-.cbox a,.cbox p{font-size:1rem;margin:0;color:var(--cream)}
-footer{padding:38px 0;color:var(--muted-dim);font-size:13.5px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-footer a{color:var(--muted)}
+body{margin:0;background:var(--ink);color:var(--parch);font:16.5px/1.75 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#lamp{position:fixed;inset:0;pointer-events:none;z-index:3;background:radial-gradient(420px circle at var(--mx,50%) var(--my,32%), rgba(232,166,60,.13), rgba(232,166,60,.04) 42%, transparent 68%);transition:background .18s ease-out}
+#motes{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.5}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:4;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E")}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px;position:relative;z-index:5}
+a{color:var(--lamp);text-decoration:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.overture{min-height:100svh;display:flex;align-items:center;padding:80px 0 60px;position:relative}
+.overture::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(900px 520px at 72% 30%, rgba(232,166,60,.10), transparent 65%),radial-gradient(700px 500px at 10% 88%, rgba(90,110,70,.10), transparent 62%)}
+.duo{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center;width:100%}
+@media(max-width:900px){.duo{grid-template-columns:1fr;gap:44px}}
+.mark{font-family:var(--serif);font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--lamp);margin:0 0 26px;opacity:.9}
+.name{font-family:var(--serif);font-weight:400;margin:0 0 26px;font-size:clamp(4.2rem,15vw,10rem);line-height:.86;letter-spacing:-.03em;color:var(--parch)}
+.name span{display:inline-block;opacity:0;transform:translateY(.32em) rotate(2deg);animation:rise .95s cubic-bezier(.2,.75,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.tag{font-family:var(--serif);font-size:clamp(1.1rem,2.3vw,1.42rem);line-height:1.5;color:var(--dust);max-width:430px;margin:0 0 34px;font-style:italic}
+.scroll{display:inline-flex;align-items:center;gap:12px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--dust-dim)}
+.scroll i{display:block;width:52px;height:1px;background:linear-gradient(90deg,var(--lamp),transparent);font-style:normal}
+.frame{position:relative;justify-self:center;width:100%;max-width:440px;margin:0}
+.frame img{display:block;width:100%;height:auto;border-radius:3px;box-shadow:0 40px 90px rgba(0,0,0,.7),0 0 0 1px rgba(232,166,60,.16)}
+.frame::before{content:"";position:absolute;inset:-14px;border:1px solid var(--line);border-radius:5px;pointer-events:none}
+.frame figcaption{margin-top:18px;text-align:center;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dust-dim)}
+section{padding:110px 0;position:relative}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.kicker{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--dust-dim);margin:0 0 20px}
+.lead{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.18;letter-spacing:-.018em;margin:0 0 22px;max-width:16ch}
+.say{color:var(--dust);max-width:52ch;margin:0}
+.shelf{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);margin-top:56px;border:1px solid var(--line)}
+@media(max-width:860px){.shelf{grid-template-columns:1fr}}
+.thing{background:var(--ink);padding:38px 30px 34px;position:relative;overflow:hidden;transition:background .45s ease}
+.thing::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--lamp),transparent);opacity:0;transition:opacity .45s ease}
+.thing:hover{background:var(--ink-2)}
+.thing:hover::after{opacity:.8}
+.thing .no{font-family:var(--serif);font-size:11px;letter-spacing:.3em;color:var(--lamp);display:block;margin-bottom:20px;opacity:.85}
+.thing h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:0 0 12px;letter-spacing:-.01em}
+.thing p{margin:0;color:var(--dust);font-size:14.5px;line-height:1.7}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:52px;margin-top:12px}
+@media(max-width:860px){.notes{grid-template-columns:1fr;gap:38px}}
+.note{border-top:1px solid var(--line);padding-top:24px}
+.note b{display:block;font-family:var(--serif);font-size:2.6rem;font-weight:400;color:var(--lamp);line-height:1;margin-bottom:16px;opacity:.9}
+.note p{margin:0;color:var(--dust);font-size:15px}
+.end{padding:100px 0 70px;text-align:center;position:relative;z-index:5}
+.end .sig{font-family:var(--serif);font-size:clamp(2.6rem,9vw,5.4rem);line-height:1;letter-spacing:-.03em;color:var(--parch);margin:0 0 18px}
+.end small{display:block;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--dust-dim)}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.name span{animation:none;opacity:1;transform:none}#lamp{transition:none}}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <div class="brand">Harmik Esmailian <em>&middot;</em> Mega Fleet</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">What I Do</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
-<div class="hero">
-  <div class="wrap hero-grid">
+<canvas id="motes"></canvas>
+<div id="lamp"></div>
+<div class="grain"></div>
+<div class="overture">
+  <div class="wrap duo">
     <div>
-      <p class="eyebrow">Transportation &amp; Logistics</p>
-      <h1>Harmik Esmailian</h1>
-      <p class="lede">Chief Executive Officer of Mega Fleet Logistics &mdash; a Pasadena carrier moving dry van and refrigerated freight across the 48 states and Mexico since 1999.</p>
-      <div class="btns">
-        <a class="btn btn-primary" href="#contact">Get in touch</a>
-        <a class="btn btn-ghost" href="https://www.megafleetcorp.com" target="_blank" rel="noopener">Mega Fleet Corp &rarr;</a>
-      </div>
+      <p class="mark">Est. in a small room</p>
+      <h1 class="name" id="nm">Harmik</h1>
+      <p class="tag">Keeper of small machines, older books, and one extremely patient crow.</p>
+      <span class="scroll"><i></i> Wander down</span>
     </div>
-    <figure class="portrait">
-      <img src="assets/portrait.png" alt="Portrait of Harmik Esmailian" onerror="this.classList.add('missing')">
-      <div class="fallback">Portrait goes here &mdash;<br>save the image as<br><strong>assets/portrait.png</strong></div>
+    <figure class="frame rv">
+      <img src="assets/portrait.jpg" alt="Harmik at his desk">
+      <figcaption>The desk, most evenings</figcaption>
     </figure>
   </div>
 </div>
-<div class="stats">
-  <div class="stat"><b>1999</b><span>Established</span></div>
-  <div class="stat"><b>1,200+</b><span>Customers Served</span></div>
-  <div class="stat"><b>48</b><span>States Covered</span></div>
-  <div class="stat"><b>11</b><span>Western States</span></div>
-</div>
-<section id="about">
-  <div class="wrap cols">
-    <div>
-      <h2>About</h2>
-      <p class="section-title">Freight is a promise. My job is keeping it.</p>
-    </div>
-    <div class="prose">
-      <p class="pull">Every load is somebody's deadline. That's the whole job, and it hasn't changed since 1999.</p>
-      <p>I lead Mega Fleet Logistics, a for-hire interstate carrier headquartered in Pasadena, California. We haul dry van and reefer freight &mdash; one-way, dedicated, local, and expedited &mdash; for shippers who need their loads to arrive on time and undamaged, the first time.</p>
-      <p>The business was built on a simple premise: modern equipment, professional drivers, and enough investment in technology that a customer never has to wonder where their freight is. Three decades of industry experience sit behind every lane we run.</p>
-      <p>I spend most of my time on the parts of this business that don't scale by themselves &mdash; capacity planning, customer relationships, and making sure the operation stays as accountable at 1,200 customers as it was at ten.</p>
-    </div>
-  </div>
-</section>
-<section id="work">
+<div class="wrap"><div class="rule"></div></div>
+<section>
   <div class="wrap">
-    <h2>What I Do</h2>
-    <p class="section-title" style="max-width:640px">Capabilities I build the business around.</p>
-    <div class="cards">
-      <div class="card"><span class="ico">I</span><h3>Dedicated &amp; One-Way Freight</h3><p>Contracted dedicated capacity and one-way truckload service across the western United States and nationwide lanes.</p></div>
-      <div class="card"><span class="ico">II</span><h3>Refrigerated &amp; Dry Van</h3><p>Temperature-controlled and dry van equipment for produce, consumer goods, and general freight &mdash; including cross-border service into Mexico.</p></div>
-      <div class="card"><span class="ico">III</span><h3>Expedited &amp; Local P&amp;D</h3><p>Time-critical expedited runs and local pickup and delivery for shippers working against tight windows.</p></div>
-      <div class="card"><span class="ico">IV</span><h3>Transloading</h3><p>Port and warehouse transloading that keeps freight moving between modes without sitting on the dock.</p></div>
-      <div class="card"><span class="ico">V</span><h3>Seasonal Surge Capacity</h3><p>Fleet depth held in reserve so peak-season demand doesn't turn into missed pickups for regular customers.</p></div>
-      <div class="card"><span class="ico">VI</span><h3>Compliance &amp; Safety</h3><p>FMCSA-authorized interstate operation (USDOT 1681189 &middot; MC-499871) run to a standard that holds up under audit.</p></div>
+    <p class="kicker rv">What's on the desk</p>
+    <h2 class="lead rv">Everything here was kept on purpose.</h2>
+    <p class="say rv">Nothing arrives by accident. The lamp gets lit, the drawer gets opened, and whatever comes out has usually been waiting a while for its turn.</p>
+    <div class="shelf">
+      <div class="thing rv"><span class="no">I</span><h3>The Books</h3><p>Spines cracked in all the wrong places. Bought faster than they are read, which is the correct ratio.</p></div>
+      <div class="thing rv"><span class="no">II</span><h3>The Camera</h3><p>Mechanical, unhurried, occasionally loaded. It remembers light better than anyone in the room.</p></div>
+      <div class="thing rv"><span class="no">III</span><h3>The Tools</h3><p>A screwdriver, a soldering iron, and the firm belief that most broken things are only sulking.</p></div>
+      <div class="thing rv"><span class="no">IV</span><h3>The Crow</h3><p>Arrived uninvited. Stayed anyway. Has strong opinions and shares none of them.</p></div>
+      <div class="thing rv"><span class="no">V</span><h3>The Frame</h3><p>The reason the lamp stays on late. Everything else on this desk is a hobby.</p></div>
+      <div class="thing rv"><span class="no">VI</span><h3>The Lamps</h3><p>Two of them, both amber, both older than they look. They decide when the evening starts.</p></div>
     </div>
   </div>
 </section>
-<section id="experience">
-  <div class="wrap cols">
-    <div>
-      <h2>Experience</h2>
-      <p class="section-title">Built lane by lane.</p>
-    </div>
-    <div>
-      <ul class="tl">
-        <li><p class="yr">Present</p><h3>Chief Executive Officer &mdash; Mega Fleet Logistics</h3><p>Leading operations, growth, and customer strategy for a nationwide for-hire carrier based in Pasadena, CA.</p></li>
-        <li><p class="yr">1999</p><h3>Mega Fleet Corp. established</h3><p>Founded as an interstate carrier serving the western United States, later expanding to all 48 states and Mexico.</p></li>
-        <li><p class="yr">30+ Years</p><h3>Transportation industry experience</h3><p>Three decades across trucking operations, freight brokerage relationships, and fleet management.</p></li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section id="contact">
+<div class="wrap"><div class="rule"></div></div>
+<section>
   <div class="wrap">
-    <h2>Contact</h2>
-    <p class="section-title" style="max-width:640px">Have freight to move, or something to discuss?</p>
-    <div class="contact-grid">
-      <div class="cbox"><span>Email</span><a href="mailto:mikee@megafleetcorp.com">mikee@megafleetcorp.com</a></div>
-      <div class="cbox"><span>Toll Free</span><a href="tel:+18889002977">888-900-2977</a></div>
-      <div class="cbox"><span>Office</span><p>1130 E Green St, Suite 212<br>Pasadena, CA 91106</p></div>
+    <p class="kicker rv">Marginalia</p>
+    <h2 class="lead rv">Three things worth writing down.</h2>
+    <div class="notes">
+      <div class="note rv"><b>&mdash;</b><p>Take it apart before you decide it's finished. You will almost always find one more screw than the diagram promised.</p></div>
+      <div class="note rv"><b>&mdash;</b><p>A quiet hour is worth three loud ones. Guard it like it costs something, because it does.</p></div>
+      <div class="note rv"><b>&mdash;</b><p>Keep the thing that has no use. That is usually the one you'll want in ten years.</p></div>
     </div>
   </div>
 </section>
-<div class="wrap">
-  <footer>
-    <div>&copy; <span id="yr">2026</span> Harmik Esmailian. All rights reserved.</div>
-    <div><a href="https://www.megafleetcorp.com" target="_blank" rel="noopener">megafleetcorp.com</a></div>
-  </footer>
+<div class="wrap"><div class="rule"></div></div>
+<div class="end">
+  <p class="sig">Harmik</p>
+  <small>&copy; <span id="yr">2026</span> &middot; Lights out eventually</small>
 </div>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var el=document.getElementById('nm'),t=el.textContent,out='';for(var i=0;i<t.length;i++){out+='<span style="animation-delay:'+(i*68+120)+'ms">'+t[i]+'</span>';}el.innerHTML=out;})();
+(function(){var l=document.getElementById('lamp');window.addEventListener('pointermove',function(e){l.style.setProperty('--mx',(e.clientX/innerWidth*100)+'%');l.style.setProperty('--my',(e.clientY/innerHeight*100)+'%');},{passive:true});})();
+(function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.rv').forEach(function(n,i){n.style.transitionDelay=(i%6*70)+'ms';io.observe(n);});})();
+(function(){var c=document.getElementById('motes'),x=c.getContext('2d'),p=[],w,h;if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;function size(){w=c.width=innerWidth;h=c.height=innerHeight;}size();addEventListener('resize',size,{passive:true});for(var i=0;i<58;i++)p.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.5+.35,vy:-(Math.random()*.16+.03),vx:(Math.random()-.5)*.12,a:Math.random()*.5+.15});(function loop(){x.clearRect(0,0,w,h);for(var i=0;i<p.length;i++){var d=p[i];d.y+=d.vy;d.x+=d.vx+Math.sin(d.y/60)*.09;if(d.y<-6){d.y=h+6;d.x=Math.random()*w;}x.beginPath();x.arc(d.x,d.y,d.r,0,6.283);x.fillStyle='rgba(240,214,160,'+d.a+')';x.fill();}requestAnimationFrame(loop);})();})();
+</script>
 </body>
 </html>
